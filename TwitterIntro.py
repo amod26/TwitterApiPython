@@ -11,8 +11,13 @@
 
 import tweepy
  
-auth = tweepy.OAuthHandler("mveC3n1QVckgIwlDsVIQ5PZKX", "JUDW33nttqTXRhivywlxgXKzUJqJ5zoH1xs8WElUuPcUOYVQRL")
-auth.set_access_token("724102028-BwbzT1ileSXXJs6fohDwzBG2kbQvUf68J2De4jZz", "kZj0PWcGAzsI753xIpiRKlhwBVZ1bH1zDR4T4k93U9taC")
+consumer_key = 'YOUR-CONSUMER-KEY'
+consumer_secret = 'YOUR-CONSUMER-SECRET'
+access_token = 'YOUR-ACCESS-TOKEN'
+access_secret = 'YOUR-ACCESS-SECRET'
+ 
+auth = OAuthHandler(consumer_key, consumer_secret)
+auth.set_access_token(access_token, access_secret)
 client = tweepy.API(auth)
 #client.update_status("Sabse Uncha Sabse Shaandaar #StatueOfUnity") # will update your twitter status
 api = tweepy.API(auth, wait_on_rate_limit=True)
@@ -73,8 +78,8 @@ with open('python.json', 'r') as f:
 
 import tweepy
  
-auth = tweepy.OAuthHandler("mveC3n1QVckgIwlDsVIQ5PZKX", "JUDW33nttqTXRhivywlxgXKzUJqJ5zoH1xs8WElUuPcUOYVQRL")
-auth.set_access_token("724102028-BwbzT1ileSXXJs6fohDwzBG2kbQvUf68J2De4jZz", "kZj0PWcGAzsI753xIpiRKlhwBVZ1bH1zDR4T4k93U9taC")
+auth = OAuthHandler(consumer_key, consumer_secret)
+auth.set_access_token(access_token, access_secret)
 client = tweepy.API(auth)
 client = tweepy.API(auth)
 api = tweepy.API(auth, wait_on_rate_limit=True)
